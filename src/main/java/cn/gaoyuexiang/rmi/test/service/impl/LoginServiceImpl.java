@@ -21,8 +21,8 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public LoginResult login(User user) throws RemoteException {
-		boolean success = checkService.checkUser(user);
+	public LoginResult login(String username, String password) throws RemoteException {
+		boolean success = checkService.checkUser(new User(username, password));
 		LoginResult result = new LoginResult();
 		if (success) {
 			result.setId(123L);
