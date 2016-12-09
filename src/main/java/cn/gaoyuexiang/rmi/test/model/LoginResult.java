@@ -37,4 +37,13 @@ public class LoginResult implements Serializable {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
+	@Override
+	public String toString() {
+		return "LoginResult{" +
+			"id=" + id +
+			", token='" + token + '\'' +
+			", status='" + status + '\'' +
+			'}';
+	}
 }
