@@ -1,2 +1,3 @@
 rootProject.name = 'rmi.test'
+include 'rmi.test.client'
 
